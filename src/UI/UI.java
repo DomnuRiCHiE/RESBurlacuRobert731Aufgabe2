@@ -75,7 +75,7 @@ public class UI {
                     System.out.println("1 - Ascending OR 2 - Descending");
                     int input2 = scanner.nextInt();
                     scanner.nextLine();
-                    //System.out.println(charaktereController.aufgabe5(input1, input2));
+                    System.out.println(charaktereController.aufgabe5(input1, input2));
                     break;
 
                 case "6":
@@ -102,7 +102,7 @@ public class UI {
         String input = scanner.nextLine();
         while (true) {
             String name, herkunftsregion;
-            int preis;
+            double preis;
             Produkten produkte;
             switch (input) {
                 case "1":
@@ -113,7 +113,7 @@ public class UI {
                     herkunftsregion = scanner.nextLine();
 
                     System.out.println("Preis: ");
-                    preis = scanner.nextInt();
+                    preis = scanner.nextDouble();
                     scanner.nextLine();
 
                     produkteController.add(new Produkten(name, preis, herkunftsregion));
@@ -151,7 +151,7 @@ public class UI {
                         String newHerkunftsregion = scanner.nextLine();
 
                         System.out.println("New preis: ");
-                        int newPrice = scanner.nextInt();
+                        double newPrice = scanner.nextDouble();
                         scanner.nextLine();
 
                         produkteController.update(produkte, new Produkten(newName, newPrice, newHerkunftsregion));

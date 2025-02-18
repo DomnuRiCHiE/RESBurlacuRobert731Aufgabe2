@@ -28,17 +28,17 @@ public class CharaktereController implements IController<Charakteren, Integer> {
                 .toList();
     }
 
-//    public List<Produkten> aufgabe5(int id, int sort) {
-//        Charakteren selectedCharaktere = charaktereRepository.get(id);
-//
-//        List<Produkten> produkte = selectedCharaktere.getProdukte();
-//        if(sort == 1) {
-//            produkte.sort(Comparator.comparingInt(Produkten::getPreis));
-//        } else {
-//            produkte.sort((p1, p2) -> Integer.compare(p2.getPreis(), p1.getPreis()));
-//        }
-//        return produkte;
-//    }
+    public List<Produkten> aufgabe5(int id, int sort) {
+        Charakteren selectedCharaktere = charaktereRepository.get(id);
+
+        List<Produkten> produkte = selectedCharaktere.getProdukte();
+        if(sort == 1) {
+            produkte.sort(Comparator.comparingDouble(Produkten::getPreis));
+        } else {
+            produkte.sort((p1, p2) -> Double.compare(p2.getPreis(), p1.getPreis()));
+        }
+        return produkte;
+    }
 
     @Override
     public void add(Charakteren entity) {
