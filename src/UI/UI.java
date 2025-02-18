@@ -79,9 +79,11 @@ public class UI {
 
                 case "5":
                     System.out.println();
-                    System.out.println("Choose a charakter id: ");
-                    int input1 = scanner.nextInt();
-                    scanner.nextLine();
+//                    System.out.println("Choose a charakter id: ");
+//                    int input1 = scanner.nextInt();
+//                    scanner.nextLine();
+                    System.out.println("Give a charakter name: ");
+                    String input1 = scanner.nextLine();
                     System.out.println("1 - Ascending OR 2 - Descending");
                     int input2 = scanner.nextInt();
                     scanner.nextLine();

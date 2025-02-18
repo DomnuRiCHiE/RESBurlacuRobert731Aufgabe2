@@ -28,8 +28,8 @@ public class CharaktereController implements IController<Charakteren, Integer> {
                 .toList();
     }
 
-    public List<Produkten> aufgabe5(int id, int sort) {
-        Charakteren selectedCharaktere = charaktereRepository.get(id);
+    public List<Produkten> aufgabe5(String id, int sort) {
+        Charakteren selectedCharaktere = charaktereRepository.getCharaktere(id);
 
         List<Produkten> produkte = selectedCharaktere.getProdukte();
         if(sort == 1) {

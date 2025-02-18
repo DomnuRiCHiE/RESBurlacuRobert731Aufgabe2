@@ -34,6 +34,15 @@ public class CharaktereRepository implements IRepository<Charakteren, Integer> {
         }
     }
 
+    public Charakteren getCharaktere(String id) {
+        for(Charakteren charakter : charaktere) {
+            if(Objects.equals(charakter.getName(), id)) {
+                return charakter;
+            }
+        }
+        return null;
+    }
+
     @Override
     public Charakteren get(Integer entity) {
         for(Charakteren charakter : charaktere) {
