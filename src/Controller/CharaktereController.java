@@ -15,11 +15,11 @@ public class CharaktereController implements IController<Charakteren, Integer> {
         this.charaktereRepository = charaktereRepository;
     }
 
-//    public List<Charakteren> filterByX(String x) {
-//        return getAll().stream()
-//                .filter(charaktere -> Objects.equals(charaktere.getHerkunftsort(), x))
-//                .toList();
-//    }
+    public List<Charakteren> filterByX(String x) {
+        return getAll().stream()
+                .filter(charaktere -> Objects.equals(charaktere.getHerkunftsdorf(), x))
+                .toList();
+    }
 
 //    public List<Charakteren> aufgabe4(String x) {
 //        return getAll().stream()

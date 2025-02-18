@@ -56,7 +56,7 @@ public class UI {
                     System.out.println("Give a place: ");
                     String place = scanner.nextLine();
                     System.out.println();
-                    //System.out.println(charaktereController.filterByX(place));
+                    System.out.println(charaktereController.filterByX(place));
                     break;
 
                 case "4":
