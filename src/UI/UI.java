@@ -68,7 +68,13 @@ public class UI {
                     System.out.println("Give a place: ");
                     String place1 = scanner.nextLine();
                     System.out.println();
-                    System.out.println(charaktereController.aufgabe4(place1));
+                    //System.out.println(charaktereController.aufgabe4(place1));
+                    List<Charakteren> charakterens1 = charaktereController.aufgabe4(place1);
+                    List<String> strings = new ArrayList<>();
+                    for(Charakteren c : charakterens1) {
+                        strings.add(c.getName());
+                    }
+                    strings.stream().sorted().forEach(System.out::println);
                     break;
 
                 case "5":
