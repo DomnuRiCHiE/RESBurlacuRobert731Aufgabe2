@@ -30,6 +30,10 @@ public class Charakteren {
         this.produkte = new ArrayList<>();
     }
 
+    public void kaufeProdukt(Produkten produkten) {
+        this.produkte.add(produkten);
+    }
+
     public int getId() {
         return id;
     }
