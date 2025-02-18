@@ -85,7 +85,11 @@ public class UI {
                     System.out.println("1 - Ascending OR 2 - Descending");
                     int input2 = scanner.nextInt();
                     scanner.nextLine();
-                    System.out.println(charaktereController.aufgabe5(input1, input2));
+                    //System.out.println(charaktereController.aufgabe5(input1, input2));
+                    List<Produkten> produkten2 = charaktereController.aufgabe5(input1, input2);
+                    for(Produkten produkten : produkten2) {
+                        System.out.println(produkten.getName() + " - " + produkten.getPreis());
+                    }
                     break;
 
                 case "6":
