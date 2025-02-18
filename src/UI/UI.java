@@ -64,7 +64,7 @@ public class UI {
                     System.out.println("Give a place: ");
                     String place1 = scanner.nextLine();
                     System.out.println();
-                    //System.out.println(charaktereController.aufgabe4(place1));
+                    System.out.println(charaktereController.aufgabe4(place1));
                     break;
 
                 case "5":

@@ -21,12 +21,12 @@ public class CharaktereController implements IController<Charakteren, Integer> {
                 .toList();
     }
 
-//    public List<Charakteren> aufgabe4(String x) {
-//        return getAll().stream()
-//                .filter(charaktere -> charaktere.getProdukte().stream()
-//                        .anyMatch(produkte -> Objects.equals(produkte.getHerkunftsregion(), x)))
-//                .toList();
-//    }
+    public List<Charakteren> aufgabe4(String x) {
+        return getAll().stream()
+                .filter(charaktere -> charaktere.getProdukte().stream()
+                        .anyMatch(produkte -> Objects.equals(produkte.getHerkunftsregion(), x)))
+                .toList();
+    }
 
 //    public List<Produkten> aufgabe5(int id, int sort) {
 //        Charakteren selectedCharaktere = charaktereRepository.get(id);
